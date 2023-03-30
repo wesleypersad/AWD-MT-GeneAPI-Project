@@ -1,0 +1,9 @@
+[
+    {
+        "model": "genedata.Hello",
+        "pk": 1,
+        "fields": {
+            "text": "Hello From Wesley's Midterm App !!!"
+        }
+    }
+]

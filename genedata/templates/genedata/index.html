@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="AWD Midterm Submission">
+        <meta name="keywords" content="HTML,midterm,genes,advanced,web,development">
+        <meta name="author" content="W.V.Persad">
+        <style>
+            h1, h2 {color: black;}
+            body {font-family: Sans-Serif;
+                margin: 10px;
+                border: 10px;
+                padding: 10px;
+                color: blue;}
+        </style>
+    </head>
+    <body>
+        <h1>This is Wesley's Really Simple Gene API Site</h1>
+        <h2>Existing Admin Page</h2>
+        <p>
+            http://127.0.0.1:8080/admin/ - allows logon in admin page
+        </p>
+        <p>
+            Username : admin
+        </p>
+        <p>    
+            Password : 4321
+        </p>
+        <h2>REST Specification:</h2>
+        <p>
+            POST http://127.0.0.1:8000/api/protein/ - add a new record
+        </p>
+        <p>
+            GET  http://127.0.0.1:8000/api/protein/[PROTEIN ID] - return the protein sequence and all we know about it
+        </p>
+        <p>
+            GET  http://127.0.0.1:8000/api/pfam/[PFAM ID] - return the domain and it's deacription
+        </p>
+        <p>
+            GET  http://127.0.0.1:8000/api/proteins/[TAXA ID] - return a list of all proteins for a given organism
+        </p>
+        <p>
+            GET  http://127.0.0.1:8000/api/pfams/[TAXA ID] - return a list of all domains for a given organism
+        </p>
+        <p>
+            GET  http://127.0.0.1:8000/api/coverage/[PROTEIN ID] - return the domain coverage for a given protein
+        </p>
+    </body>
+</html>

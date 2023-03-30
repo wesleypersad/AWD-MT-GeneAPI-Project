@@ -1,0 +1,12 @@
+//ACTIVATE AND DEACTIVATE VIRUAL ENVIRONMENT
+socialnetwork/Scripts/activate
+deactivate
+
+//RUNNING THE DJANGO APPLICATION
+python manage.py runserver
+
+//EXAMINE SQLITE DB
+sqlite3 'some_table'                //OR NAME OF DB
+sqlite> .dump                       //DUMP THIS DB 
+sqlite> .tables                     //LIST THE tables
+sqlite> select * from 'some_table'; //REGULAR SQL WORKS
