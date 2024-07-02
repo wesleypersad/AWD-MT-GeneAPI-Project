@@ -1,5 +1,5 @@
 //ACTIVATE AND DEACTIVATE VIRUAL ENVIRONMENT
-socialnetwork/Scripts/activate
+./genesite/Scripts/activate
 deactivate
 
 //RUNNING THE DJANGO APPLICATION
@@ -10,3 +10,25 @@ sqlite3 'some_table'                //OR NAME OF DB
 sqlite> .dump                       //DUMP THIS DB 
 sqlite> .tables                     //LIST THE tables
 sqlite> select * from 'some_table'; //REGULAR SQL WORKS
+
+//USEFUL GIT COMMANDS
+// To push selected branch (main) to github 
+//
+git push -u origin main             // 1st time
+git push                            // subsequent times
+git push --set-upstream origin anybranch    
+                                    //force origin to revert to anybranch including main
+
+// To get all files form github repo
+git pull
+
+// other git commands
+git branch                          // show all branches with current stared *
+git branch newbranch                // create a new branch
+git switch newbranch                // move to new branch
+git merge /-m "message"/ newbranch  // merge newbranch into curent branch e.g. main
+git branch -d newbranch             // deletes a branch
+
+git add .                           // add files to staging
+git commit -a -m "message"          // commit any changes to the current branch
+git commit --amend                  // add minor changes to last commit
