@@ -1,6 +1,5 @@
 .gitignore
 help.txt
-.env
 
 # Bytecode files
 __pycache__/

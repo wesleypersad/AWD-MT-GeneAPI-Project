@@ -32,3 +32,8 @@ git branch -d newbranch             // deletes a branch
 git add .                           // add files to staging
 git commit -a -m "message"          // commit any changes to the current branch
 git commit --amend                  // add minor changes to last commit
+
+// remove files and directories and recommit
+git rm --cached <file>
+git rm -r --cached <directory>
+git commit -m "Remove mistakenly added files/directories"
