@@ -34,8 +34,9 @@ SECRET_KEY = env('SECRET_KEY')
 # DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-# ALLOWED_HOSTS = ['localhost', '127.0.0.1']
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'awd-mt-geneapi-project-production.up.railway.app']
+
+CSRF_TRUSTED_ORIGINS = [ 'https://awd-mt-geneapi-project-production.up.railway.app' ]
 
 # Application definition
 
